@@ -1,7 +1,7 @@
 <script>
   import buildRegl from "regl";
 
-  import vert from "./fragment.glsl";
+  import vert from "./Shader.vert";
   export let frag;
   const regl = buildRegl();
 
