@@ -3,6 +3,10 @@
   import TextGradient from "../components/TextGradient.svelte";
 </script>
 
+<svelte:head>
+  <title>Shaders</title>
+</svelte:head>
+
 <main>
   <div class="title-wrapper">
     <div class="title">

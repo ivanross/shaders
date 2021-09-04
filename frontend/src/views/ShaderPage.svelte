@@ -8,6 +8,12 @@
   export let src;
 </script>
 
+<svelte:head>
+  <title>
+    {src} | Shaders
+  </title>
+</svelte:head>
+
 {#await fetchShader(src)}
   <Loader />
 {:then frag}
