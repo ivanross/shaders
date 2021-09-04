@@ -1,5 +1,5 @@
 <script>
-  import { fetchShader } from "../fetchShader";
+  import { fetchShader } from "../lib/api";
   import Error from "./Error.svelte";
   import Loader from "./Loader.svelte";
   import Shader from "./Shader.svelte";
@@ -11,6 +11,6 @@
   <Loader />
 {:then frag}
   <Shader {frag} />
-{:catch message}
-  <Error {message} />
+{:catch error}
+  <Error {...error} />
 {/await}

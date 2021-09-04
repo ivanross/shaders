@@ -22,4 +22,23 @@ export function fetchStore(url, handleResponse) {
   return [data, loading, error, get]
 }
 
-export const shaderList = fetchStore('assets/list.json', (res) => res.json())
+export const until = (readable, valueOrCondition) => {
+  const condition =
+    typeof valueOrCondition === 'function'
+      ? valueOrCondition
+      : (value) => value === valueOrCondition
+
+  return new Promise((resolve) => {
+    readable.subscribe((value) => {
+      if (condition(value)) resolve(value)
+    })
+  })
+}
+
+export const read = (readable) => {
+  return new Promise((resolve) => {
+    readable.subscribe((value) => {
+      return resolve(value)
+    })
+  })
+}
