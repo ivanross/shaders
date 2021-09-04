@@ -86,7 +86,7 @@
 
   @media (min-width: 768px) {
     .menu {
-      width: 250px;
+      width: 350px;
     }
   }
 </style>

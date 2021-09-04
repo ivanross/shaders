@@ -8,7 +8,10 @@
     <div class="title">
       <TextGradient>SHADERS</TextGradient>
     </div>
-    <div>A collection of shaders, experiments, trys and errors.</div>
+    <div>
+      A collection of shaders, experiments, tries and
+      <span class="error">erorrs</span>.
+    </div>
   </div>
 
   <div class="select">
@@ -19,6 +22,10 @@
 </main>
 
 <style>
+  .error {
+    text-decoration: #ff555d wavy underline;
+  }
+
   main {
     width: 100%;
     height: 100%;
@@ -27,10 +34,14 @@
   }
 
   .title-wrapper {
-    display: block;
     text-align: center;
     min-height: 200px;
     padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .title {
@@ -40,7 +51,7 @@
 
   .select {
     flex: 1 1 auto;
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
     border-radius: 10px;
     overflow: hidden;
     border-color: var(--separator-color);
@@ -56,24 +67,20 @@
   }
 
   @media (min-width: 768px) {
-    .title-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .select {
-      margin: 0;
-      border-radius: 0;
-      border-width: 0 0 0 1px;
-    }
-
     main {
       flex-direction: row;
     }
-    main > * {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+    .title-wrapper {
+      width: 100%;
+      flex: 1 1 auto;
+    }
+    .select {
+      flex-shrink: 0;
+      width: 350px;
+      margin: 0;
+      border-radius: 0;
+      border-width: 0 0 0 1px;
     }
   }
 </style>

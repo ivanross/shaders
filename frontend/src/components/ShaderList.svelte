@@ -17,6 +17,7 @@
 
 <style>
   .wrapper {
+    background-color: var(--list-bg-color);
     min-height: 100%;
     width: 100%;
   }
