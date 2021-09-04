@@ -9,10 +9,10 @@ body {
 body {
   color: #ddd;
   margin: 0;
-  padding: 8px;
+  padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 

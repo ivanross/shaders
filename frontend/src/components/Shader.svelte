@@ -1,5 +1,6 @@
 <script>
   import buildRegl from "regl";
+  import { onDestroy } from "svelte";
 
   import vert from "./Shader.vert";
   export let frag;
@@ -28,4 +29,6 @@
     regl.clear({ color: [0, 0, 0, 1] });
     draw();
   });
+
+  onDestroy(() => regl.destroy());
 </script>
