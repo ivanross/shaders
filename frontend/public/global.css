@@ -1,13 +1,19 @@
+:root {
+  --text-color: white;
+  --bg-color: #222;
+  --separator-color: #777;
+}
+
 html,
 body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 body {
-  color: #ddd;
+  color: var(--text-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;

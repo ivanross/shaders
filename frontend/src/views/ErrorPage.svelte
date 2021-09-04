@@ -1,5 +1,5 @@
 <script>
-  import { link } from "svelte-navigator";
+  import HomeButton from "../components/HomeButton.svelte";
 
   export let status;
   export let error;
@@ -17,7 +17,7 @@
     <strong class="title">{status}</strong>
     <div class="subtitle">{@html error}</div>
 
-    <a href="/" use:link>&#8592; Home</a>
+    <HomeButton />
   </div>
 </div>
 
@@ -37,7 +37,7 @@
   .subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #777;
 
     max-width: 80vw;
     white-space: nowrap;
@@ -46,7 +46,7 @@
   }
 
   .subtitle :global(i) {
-    color: #bbb;
+    color: #ddd;
     text-decoration: line-through;
   }
 </style>
