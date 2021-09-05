@@ -1,16 +1,16 @@
 <script>
-  import { fetchShader } from "../lib/api";
-  import ErrorPage from "./ErrorPage.svelte";
-  import Loader from "../components/Loader.svelte";
-  import Shader from "../components/Shader.svelte";
-  import ShaderMenu from "../components/ShaderMenu.svelte";
+  import { fetchShader } from '../lib/api'
+  import ErrorPage from './ErrorPage.svelte'
+  import Loader from '../components/Loader.svelte'
+  import Shader from '../components/Shader.svelte'
+  import ShaderMenu from '../components/ShaderMenu.svelte'
 
-  export let src;
+  export let src
 </script>
 
 <svelte:head>
   <title>
-    {src} | Shaders
+    Shaders / {src}
   </title>
 </svelte:head>
 

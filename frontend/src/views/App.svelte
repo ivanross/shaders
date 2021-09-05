@@ -1,7 +1,7 @@
 <script>
-  import { Router, Route } from "svelte-navigator";
-  import ShaderPage from "./ShaderPage.svelte";
-  import HomePage from "./HomePage.svelte";
+  import { Router, Route } from 'svelte-navigator'
+  import ShaderPage from './ShaderPage.svelte'
+  import HomePage from './HomePage.svelte'
 </script>
 
 <Router>

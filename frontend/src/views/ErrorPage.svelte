@@ -1,23 +1,27 @@
 <script>
-  import HomeButton from "../components/HomeButton.svelte";
+  import HomeButton from '../components/HomeButton.svelte'
+  import Social from '../components/Social.svelte'
 
-  export let status;
-  export let error;
+  export let status
+  export let error
 
   $: {
-    console.groupCollapsed("Error");
-    console.log("status", status);
-    console.log("error", error);
-    console.groupEnd();
+    console.groupCollapsed('Error')
+    console.log('status', status)
+    console.log('error', error)
+    console.groupEnd()
   }
 </script>
 
 <div class="wrapper">
-  <div>
+  <div class="content">
     <strong class="title">{status}</strong>
     <div class="subtitle">{@html error}</div>
-
     <HomeButton />
+  </div>
+
+  <div class="footer">
+    <Social />
   </div>
 </div>
 
@@ -28,6 +32,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .content {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .footer {
+    margin: 1rem;
   }
 
   .title {

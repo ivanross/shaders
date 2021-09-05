@@ -1,10 +1,10 @@
 <script>
-  import { shaderListStore } from "../stores";
-  import ShaderListItem from "./ShaderListItem.svelte";
+  import { shaderListStore } from '../stores'
+  import ShaderListItem from './ShaderListItem.svelte'
 
-  export let src;
+  export let src
 
-  const [data, loading] = shaderListStore;
+  const [data, loading] = shaderListStore
 </script>
 
 <div class="wrapper">

@@ -2,3 +2,4 @@
 /public/build/
 /public/assets/
 .DS_Store
+*.log

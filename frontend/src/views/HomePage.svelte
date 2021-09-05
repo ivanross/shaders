@@ -1,6 +1,7 @@
 <script>
-  import ShaderList from "../components/ShaderList.svelte";
-  import TextGradient from "../components/TextGradient.svelte";
+  import ShaderList from '../components/ShaderList.svelte'
+  import Social from '../components/Social.svelte'
+  import TextGradient from '../components/TextGradient.svelte'
 </script>
 
 <svelte:head>
@@ -9,12 +10,18 @@
 
 <main>
   <div class="title-wrapper">
-    <div class="title">
-      <TextGradient>SHADERS</TextGradient>
+    <div class="title-content">
+      <div class="title">
+        <TextGradient>SHADERS</TextGradient>
+      </div>
+      <div>
+        A collection of shaders, experiments, tries and
+        <span class="error">erorrs</span>.
+      </div>
     </div>
-    <div>
-      A collection of shaders, experiments, tries and
-      <span class="error">erorrs</span>.
+
+    <div class="social">
+      <Social />
     </div>
   </div>
 
@@ -42,6 +49,15 @@
     min-height: 200px;
     padding: 0 2rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-content {
+    height: 100%;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +101,10 @@
       margin: 0;
       border-radius: 0;
       border-width: 0 0 0 1px;
+    }
+
+    .social {
+      margin: 1rem;
     }
   }
 </style>

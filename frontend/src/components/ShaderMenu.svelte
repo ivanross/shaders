@@ -1,11 +1,11 @@
 <script>
-  import CloseIcon from "../svg/CloseIcon.svelte";
+  import CloseIcon from '../svg/CloseIcon.svelte'
 
-  import HamburgerIcon from "../svg/HamburgerIcon.svelte";
-  import HomeButton from "./HomeButton.svelte";
-  import ShaderList from "./ShaderList.svelte";
-  export let src;
-  let open = false;
+  import HamburgerIcon from '../svg/HamburgerIcon.svelte'
+  import HomeButton from './HomeButton.svelte'
+  import ShaderList from './ShaderList.svelte'
+  export let src
+  let open = false
 </script>
 
 <div class="hamburger" on:click={() => (open = true)}>
