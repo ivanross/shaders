@@ -18,28 +18,33 @@ float circle(vec2 _st, float _radius) {
                          dot(dist, dist) * 2.);
 }
 
+float impulse(in float st) {
+
+  st = pow(cos(st + sin(st)) * 0.5 + 0.5, 20.);
+  return st;
+}
+
 vec3 scene(vec2 st, float time) {
 
   vec3 col = vec3(0.);
 
   float r = length(st);
-  float angle = ((atan(st.y, st.x)));
-  float speed = 9.;
+  float angle = (atan(st.y, st.x));
+  float speed = 2.;
 
-  // r += cos(time) * 0.5 + 0.5;
-  // angle += cos(r + time * speed);
+  float r_off = impulse(r * 2. - time * speed);
 
-  float r_off = pow(sin(r * 7. - time * speed) * .5 + 0.5, 10.);
-  r += r_off * 0.02;
+  r += r_off * 0.03;
+
   st.x = r * cos(angle);
   st.y = r * sin(angle);
 
-  st *= 20.;
+  st *= 15.;
 
   st = fract(st);
-  col += circle((st - 0.5) * 5., 1.);
+  col += circle((st - 0.5) * 3., 1.);
 
-  // return vec3((r_off));
+  // return vec3(r_off);
   return col;
 }
 
