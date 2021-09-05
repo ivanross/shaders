@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "yarn create-assets && rollup -c",
-    "dev": "yarn create-assets && irollup -c -w",
+    "dev": "yarn create-assets && rollup -c -w",
     "start": "sirv public --no-clear",
     "create-assets": "node scripts/create-assets.js"
   },

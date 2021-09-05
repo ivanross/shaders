@@ -1,3 +1,3 @@
 # SHADERS
 
-A collection of shaders, experiments, trys and errors.
+A collection of shaders, experiments, tries and errors.
