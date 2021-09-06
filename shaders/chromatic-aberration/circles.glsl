@@ -20,7 +20,7 @@ float circle(vec2 _st, float _radius) {
 
 float impulse(in float st) {
 
-  st = pow(cos(st + sin(st)) * 0.5 + 0.5, 20.);
+  st = pow(cos(st + sin(st * .4)), 31.) + sin(st * 2.) * .5;
   return st;
 }
 
@@ -42,7 +42,7 @@ vec3 scene(vec2 st, float time) {
   st *= 15.;
 
   st = fract(st);
-  col += circle((st - 0.5) * 3., 1.);
+  col += circle((st - 0.5) * 4., 1.);
 
   // return vec3(r_off);
   return col;
