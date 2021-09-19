@@ -60,6 +60,11 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@sveltejs/adapter-vercel@^1.0.0-next.0":
+  version "1.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.0.tgz#5a82c4eab9df72e851b23161ace0f64beaa8cabf"
+  integrity sha512-dQf40/2vrgRfuQ++tIAlvEgjdGUkXJTSjO5syqJd5oH2HDbP3Shi+2AxWpKAqRFGyRbXDe9ej0MK1G2soZP4fQ==
+
 "@sveltejs/kit@next":
   version "1.0.0-next.169"
   resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.169.tgz#b3db4c6df6b9a3064a8ccb77d588c7bb7bad14a8"
